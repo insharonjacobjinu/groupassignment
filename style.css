@@ -1,0 +1,255 @@
+\/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #0b54b34c;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Header at top */
+.page-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.page-header h2 {
+  color: #243b55;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #5a5a5a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Form container */
+form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 35px 45px;
+  max-width: 750px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1.5px solid #cbd3dd;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  background-color: #fafbfd;
+}
+
+legend {
+  font-weight: 600;
+  color: #243b55;
+  padding: 0 10px;
+}
+
+/* Inputs */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #cfd8e3;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  background-color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #4b7bec;
+  box-shadow: 0 0 4px rgba(75, 123, 236, 0.25);
+  outline: none;
+}
+
+/* Range slider */
+input[type="range"] {
+  width: 100%;
+  accent-color: #4b7bec;
+  cursor: pointer;
+}
+
+/* File upload */
+input[type="file"] {
+  border: none;
+  margin-top: 8px;
+}
+
+/* Button */
+button {
+  display: block;
+  width: 100%;
+  background-color: #243b55;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1b2c45;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments for 375px and below */
+@media (max-width: 375px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .page-header {
+    margin-bottom: 15px;
+  }
+
+  .page-header h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .page-header p {
+    font-size: 14px;
+  }
+
+  form {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  fieldset {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+  }
+
+  legend {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+/* Responsive adjustments for 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 30px 15px;
+  }
+
+  .page-header {
+    margin-bottom: 20px;
+  }
+
+  .page-header h2 {
+    font-size: 28px;
+  }
+
+  .page-header p {
+    font-size: 14px;
+  }
+
+  form {
+    padding: 25px 30px;
+  }
+
+  fieldset {
+    padding: 18px 20px;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 11px;
+    font-size: 15px;
+  }
+}
+
+/* Responsive adjustments for 1024px */
+@media (max-width: 1024px) {
+  body {
+    padding: 35px 18px;
+  }
+
+  .page-header h2 {
+    font-size: 29px;
+  }
+
+  .page-header p {
+    font-size: 14.5px;
+  }
+
+  form {
+    padding: 30px 40px;
+  }
+
+  fieldset {
+    padding: 19px 22px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    padding: 9.5px;
+    font-size: 14.5px;
+  }
+
+  button {
+    padding: 11.5px;
+    font-size: 15.5px;
+  }
+}
+
